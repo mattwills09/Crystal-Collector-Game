@@ -1,4 +1,4 @@
-var targetNumber = Math.floor(Math.random()* 100) +20;
+var targetNumber = Math.floor(Math.random()* 120) +19;
 $("#number-to-guess").text(targetNumber);
 
 var wins = 0;
@@ -11,6 +11,12 @@ var lossesText = $("#losses");
 
 winsText.text("Wins: " + wins);
 lossesText.text("Losses: " + losses);
+
+function reset() {
+  targetNumber = Math.floor(Math.random()* 120) +19;
+  $("#number-to-guess").text(targetNumber);
+  counter = 0;
+}
 
 function randomNumber() {
   numberOptions[Math.floor(Math.random()*numberOptions.length)]
@@ -37,11 +43,6 @@ imageCrystal2.attr("data-crystalvalue2", numberOptions[Math.floor(Math.random()*
 imageCrystal3.attr("data-crystalvalue3", numberOptions[Math.floor(Math.random()*numberOptions.length)]);
 imageCrystal4.attr("data-crystalvalue4", numberOptions[Math.floor(Math.random()*numberOptions.length)]);
 
-// $("#crystal1").append(imageCrystal1);
-// $("#crystal2").append(imageCrystal2);
-// $("#crystal3").append(imageCrystal3);
-// $("#crystal4").append(imageCrystal4);
-
     // ______________________________________________________
 
 $("#crystal1").on("click", function() {
@@ -55,15 +56,17 @@ $("#crystal1").on("click", function() {
   alert("Your New Score: " + counter);
 
   if (counter === targetNumber) {
-    alert("Wooot, You Won!");
+    alert("WOOOOOT!  You Won!");
     wins++;
     winsText.text("Wins: " + wins);
+    reset();
   }
 
   else if (counter >= targetNumber) {
-    alert("Dang, You Lost!");
-    losses++;
+    alert("DOH!  You Lost!");
+    losses++
     lossesText.text("Losses: " + losses);
+    reset();
   }
 });
 
@@ -79,15 +82,17 @@ $("#crystal2").on("click", function() {
   alert("Your New Score: " + counter);
 
   if (counter === targetNumber) {
-    alert("Wooot, You Won!");
+    alert("WOOOOOT!  You Won!");
     wins++;
     winsText.text("Wins: " + wins);
+    reset();
   }
 
   else if (counter >= targetNumber) {
-    alert("Dang, You Lost!");
-    losses++;
+    alert("DOH!  You Lost!");
+    losses++
     lossesText.text("Losses: " + losses);
+    reset();
   }
 });
 
@@ -103,15 +108,17 @@ $("#crystal3").on("click", function() {
   alert("Your New Score: " + counter);
 
   if (counter === targetNumber) {
-    alert("Wooot, You Won!");
+    alert("WOOOOOT!  You Won!");
     wins++;
     winsText.text("Wins: " + wins);
+    reset();
   }
 
   else if (counter >= targetNumber) {
-    alert("Dang, You Lost!");
-    losses++;
+    alert("DOH!  You Lost!");
+    losses++
     lossesText.text("Losses: " + losses);
+    reset();
   }
 });
 
@@ -127,14 +134,16 @@ $("#crystal4").on("click", function() {
   alert("Your New Score: " + counter);
 
   if (counter === targetNumber) {
-    alert("Wooot, You Won!");
+    alert("WOOOOOT!  You Won!");
     wins++;
     winsText.text("Wins: " + wins);
+    reset();
   }
 
   else if (counter >= targetNumber) {
-    alert("Dang, You Lost!");
+    alert("DOH!  You Lost!");
     losses++
     lossesText.text("Losses: " + losses);
+    reset();
   }
 });

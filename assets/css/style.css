@@ -7,7 +7,8 @@ body {
     background-color:lightgray;
     color:blue;
     text-align:center;
-
+    width:950px;
+    margin:auto;
 }
 
 h1 {
@@ -41,7 +42,7 @@ h1 {
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size:24pt;
     color:white;
-    margin-left:300px;
+    margin-left:90px;
 }
 
 #scoreboard {

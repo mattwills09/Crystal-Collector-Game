@@ -1,0 +1,56 @@
+* {
+    box-sizing:border-box;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color:lightgray;
+    color:blue;
+    text-align:center;
+
+}
+
+h1 {
+    text-align:center;
+    padding:20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:navy;
+}
+
+.bodyText {
+    border-width:2px;
+    border-color:red;
+    border-style:dotted;
+    background-color:peachpuff;
+}
+
+.crystal-image1, .crystal-image2, .crystal-image3, .crystal-image4 {
+    border-width:2px;
+    border-color:orange;
+    width:200px;
+    height:200px;
+    float:left;
+    margin:10px;
+}
+
+#targetNumber {
+    background-color:orange;
+    width:400px;
+    height:100px;
+    padding:30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:24pt;
+    color:white;
+    margin-left:300px;
+}
+
+#scoreboard {
+    background-color:green;
+    width:300px;
+    height:100px;
+    padding:20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:20pt;
+    color:white;
+    margin:20px;
+}

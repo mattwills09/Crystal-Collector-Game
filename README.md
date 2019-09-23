@@ -1,6 +1,6 @@
-# Crystal-Collector-Game
+# Crystal Collector Game!
 
-In this project, a simple javascript game allows the user to select one of three crystals, each that have a random number between 1-29 assigned to it before each game starts.  They will then try to match the target score for that game (which also is randomly selected each game), by clicking on each crystal.  If they match the score, the game ends and the user earns a point, but if they end up going over the target score, then the game ends and everything is reset.  Good luck!
+In this single-page, simple Javascript game/project, the idea was to give the player, or user, the ability to start the game, be given a random score or number to try and match by clicking on the three crystals provided on the screen.  Each crystal, however, is also given a random value (between 1-29), for the user to try to click each one and add up their score until they match the score that was given.  If they are able to match the score, the game ends and the user earns a point, but if they are unable to match the score, or go over, then the game ends, and all values are re-assigned with random numbers.  Think you can match the score?  Give it a try, have fun and good luck!
 
 ![Crystal-Collector-Game-1](assets/images/Crystal-Collector-Game-1.jpg)
 
